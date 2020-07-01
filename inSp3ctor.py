@@ -194,7 +194,7 @@ def add_permutations(word):
     if len(word) < 64:
         bucket_checker("http://" + word.rstrip() + ".s3.amazonaws.com", "Bucket")
         bucket_checker("http://s3.amazonaws.com/" + word.rstrip(), "Bucket")
-    with open('/tmp/permutations.txt') as f:
+    with open('/usr/local/src/inSp3ctor/permutations.txt') as f:
         for line in f:
             permutation = word.rstrip() + line.rstrip()
             # Max lengthfor S3 Bucket names is 63 characters.
